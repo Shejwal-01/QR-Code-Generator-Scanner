@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  background: orangered;
+  justify-content: center;
+}
+
+*{
+ margin: 0px;
+ padding: 0px;
+
+
+
+}
+.wrapper{
+  height: 265px;
+  max-width: 410px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.wrapper.active{
+  height: 530px;
+}
+header h1{
+  font-size: 21px;
+  font-weight: 500;
+}
+header p{
+  margin-top: 5px;
+  color: #575757;
+  font-size: 16px;
+}
+.wrapper .form{
+  margin: 20px 0 25px;
+}
+.form :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+.form input{
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+.form input:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.form input::placeholder{
+  color: #919;
+}
+.form button{
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: orangered;
+}
+.qr-code{
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.wrapper.active .qr-code{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.qr-code img{
+  width: 170px;
+}
+
+@media (max-width: 430px){
+  .wrapper{
+    height: 255px;
+    padding: 16px 20px;
+  }
+  .wrapper.active{
+    height: 510px;
+  }
+  header p{
+    color: #696969;
+  }
+  .form :where(input, button){
+    height: 52px;
+  }
+  .qr-code img{
+    width: 160px;
+  }  
+}
+
+.next{
+ display: flex;
+ margin-top: 500px;
+ margin-left: 20px;
+ 
+}
+
+.next button{
+
+cursor: pointer;
+width: 4cm;
+height: 1cm;
+border-radius: 0.5cm;
+background-color: yellow;
+
+
+}
+
+ nav {  
+  background-color:black; 
+  position: fixed;  
+  left: 0;  
+  right: 0;  
+  top: 5px;  
+  height: 1.5cm;  
+  display: flex;  
+  align-items: center;  
+  box-shadow: 0 0 25px 0 black; 
+  border-radius: 1cm;
+
+  }  
+    
+ 
+  nav li h1{  
+  color: blue;  
+  padding-left: 2cm;
+  font-size:larger;
+  
+  } 
+  
